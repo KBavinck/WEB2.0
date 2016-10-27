@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registreren</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body class='registreren'>
+    <nav id='stay'>
+        <h1><a href="index.html">Verhaaltje.</a></h1>
+        <i class="material-icons hamburger">menu</i>
+        <ul class="hidden_menu menu">
+            <li><a href="#stay">Mijn verhalen</a></li>
+            <li><a href="#stay">Gelezen verhalen</a></li>
+            <li><a href="#stay">Inloggen</a></li>
+            <li><a href="#stay">Aanmelden</a></li>
+            <li>
+                <input type="search" placeholder="zoeken..">
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Aanmelden</h2>
+        <form>
+            <fieldset>
+                <legend>Jouw gegevens</legend>
+
+                <label for='username'>Gebruikersnaam:</label>
+                <input id='username' type="text" placeholder="b.v Traveler123">
+
+                <label for='useMail'>Email adres als naam gebruiken:</label>
+                <input id='useMail' type="checkbox">
+                <label for="useMail" class='checkbox'><img src="images/check.png" alt="x"></label>
+
+                <label for='email'>Email adres:</label>
+                <input id='email' type="email" placeholder="b.v traveler@example.com" required>
+
+                <label for='password1'>Uw wachtwoord:</label>
+                <input id='password1' type="password" required>
+
+                <label for='password2'>Herhaal wachtwoord:</label>
+                <input id='password2' type="password" required>
+
+                <label for='stayLogged'>Ingelogd blijven:</label>
+                <input id='stayLogged' type="checkbox">
+                <label for="stayLogged" class='checkbox'><img src="images/check.png" alt="x"></label>
+
+                <input id='submit' class="button" type="submit" value="Inloggen">
+
+                <div class='errorInfo hidden' id='error'></div>
+                <!-- copy css -->
+                <div class='errorInfo hidden' id='error2'></div>
+
+            </fieldset>
+        </form>
+        <button class="social-login">Ik heb al een account</button>
+        <button class="social-login">Log in met Facebook</button>
+        <button class="social-login">Log in met Google</button>
+    </main>
+    <script src='js/main.js'></script>
+</body>
+
+</html>
