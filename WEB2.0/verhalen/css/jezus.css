@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Roman;
+    src: url(../fonts/RomanUncialModern.ttf);
+}
+@font-face {
+    font-family: Cloister;
+    src: url(../fonts/CloisterBlack.ttf);
+}
+@font-face {
+    font-family: libelSuit;
+    src: url(../fonts/libel-suit-rg.ttf);
+}
+body{
+    background: rgb(20,20,20);
+    background: url(../images/keely-8_dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+article{
+    width: 100%;
+    max-width: 30em;
+    margin: 4em auto;
+    background: #ffffdf;
+    padding: 3em;
+    border-radius: 2px;
+    font-family: libelSuit;
+    line-height: 2em;
+    border: none;
+    /* box shadow animation */
+    -webkit-box-shadow: 0px 0px 10px 10px rgba(235, 255, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 10px rgba(235, 255, 0, 0.75);
+    box-shadow: 0px 0px 10px 10px rgba(235, 255, 0, 0.75);
+    animation-name: glow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+article h2, article h3{
+    font-family: Cloister;
+    color: rgb(40,40,40);
+}
+article h2{
+    font-size: 2.618em;
+    margin-bottom: 1em;
+}
+article h3{
+    font-size:1.618em;
+    text-align: left;
+    color: #a20000;
+}
+article p{
+    font-size: 1em;
+    margin-bottom: 3em;
+    text-align: justify;
+}
+article h3{
+    margin-bottom: 1em;
+}
+article h2::selection, article h3::selection, article p::selection, article span::selection, address::selection, time::selection {
+    background: #ff5c5c; /* WebKit */
+    color: white;
+}
+article::-moz-selection, article h3::-moz-selection, article p::-moz-selection, article span::-moz-selection, address::-moz-selection, time::-moz-selection {
+    background: #ff5c5c; /* Firefox */
+    color: white;
+}
+.highlight{
+    color: #a20000;
+    text-decoration: underline;
+}
+.addStory{
+    background: white;
+    color: rgb(20,20,20);
+}
+@keyframes glow{
+    0%{
+        -webkit-box-shadow: 0px 0px 50px 10px rgba(244, 255, 116, 0.75);
+        -moz-box-shadow: 0px 0px 50px 10px rgba(244, 255, 116, 0.75);
+        box-shadow: 0px 0px 30px 10px rgba(244, 255, 116, 0.75);
+    }
+    50%{
+        -webkit-box-shadow: 0px 0px 70px 10px rgba(111, 249, 255, 0.75);
+        -moz-box-shadow: 0px 0px 70px 10px rgba(111, 249, 255, 0.75);
+        box-shadow: 0px 0px 70px 10px rgba(236, 255, 200, 0.75);
+    }
+    100%{
+        -webkit-box-shadow: 0px 0px 50px 10px rgba(244, 255, 116, 0.75);
+        -moz-box-shadow: 0px 0px 50px 10px rgba(244, 255, 116, 0.75);
+        box-shadow: 0px 0px 30px 10px rgba(244, 255, 116, 0.75);
+    }
+}
+
+@media(max-width: 650px){
+    article{
+        box-sizing: border-box;
+        padding: 2em 1em 4em 1em;
+        margin: 2.5em auto 0 auto;
+    }
+    article h2{
+        font-size: 3em;
+    }
+    article p{
+        line-height: 1.5em;
+    }
+}
+@media(max-width: 868px){
+    .addStory{
+        background: rgb(20,20,20);
+        color: white;
+    }
+}

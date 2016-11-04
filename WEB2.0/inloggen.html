@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inloggen</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav id='stay'>
+        <h1>Verhaaltje.</h1>
+        <img src="../images/hamburger.png" alt="hamburger" />
+        <ul>
+            <li><a href="#stay">Item 1</a></li>
+            <li><a href="#stay">Item 2</a></li>
+            <li><a href="#stay">Item 3</a></li>
+            <li>
+                <input type="search">
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Inloggen</h2>
+        <form>
+            <fieldset>
+                <legend>Jouw gegevens</legend>
+                <label>Gebruikersnaam of email adres:
+                    <input type="text" placeholder="b.v Traveler123">
+                </label>
+                <label>Uw wachtwoord:
+                    <input type="password" required>
+                </label>
+                <label>Ingelogd blijven:
+                    <input type="checkbox">
+                </label>
+                <input type="submit" value="Inloggen">
+
+                <div class='badInfo noDisplay' id='error'></div>
+                <!-- copy css -->
+                <div class='badInfo noDisplay' id='error2'></div>
+
+            </fieldset>
+        </form>
+        <button>Log in met Facebook</button>
+        <button>Log in met Google</button>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+/* Global reset */
+
+@import url('reset.css');
+
+
+/* Fonts */
+
+@font-face {
+    font-family: NexaLight;
+    src: url(../../fonts/Nexa_Light.otf);
+}
+
+@font-face {
+    font-family: NexaBold;
+    src: url(../../fonts/Nexa_Bold.otf);
+}
+
+@font-face {
+    font-family: Depressionist;
+    src: url(../fonts/Depressionist_3_Revisited_2010.ttf);
+}
+@font-face {
+    font-family: Segan;
+    src: url(../fonts/Segan-Light.ttf);
+}
+body{
+    background: url(../images/crows_dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Nav & top bar */
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hamburger {
+    width:1.5em;
+    float: right;
+    margin: 0.3em 0.8em 0 0;
+    color: white;
+}
+
+nav {
+    padding: 0.5em 0 0.5em 0;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: 2;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0.5em 0.3em;
+    background: white;
+    position: absolute;
+    right: -1px;
+    top: 2em;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transition: right 1s, opacity 0.5s;
+    font-family: NexaLight;
+    list-style: none;
+}
+.hidden_menu {
+    opacity: 0;
+    right: -12em;
+}
+.active_menu{
+    color: #d1d1d1 !important;
+}
+nav li {
+    color: #00d66c;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 0.3em;
+    align-self: baseline;
+    background: white;
+}
+nav form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+input {
+    width: 70%;
+    padding: 0 .5rem;
+    line-height: 2rem;
+    border: .0625rem solid #91a3b7;
+    color: #606060;
+    font-size: 0.8rem;
+    border-radius: .5rem;
+    transition: border .2s linear;
+}
+
+input:hover,
+input:focus {
+    border-color: #2800a0;
+}
+nav input{
+    border-radius: 0.5rem 0 0 0.5rem;
+    line-height: normal;
+    height: 2rem;
+}
+nav input[type='submit']{
+    width: 30%;
+    border: none;
+    height: 2rem;
+    background: #2800a0;
+    color: white;
+    margin:0;
+    float: right;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.cover{
+    height: 50vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+}
+.top{
+    top: 47px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,1+60,0+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 80%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 80%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.bottom{
+    bottom: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,1+60,0+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 20%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 20%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+article{
+    max-width: 30em;
+    width: 95%;
+    margin: 45vh auto 50vh auto;
+    padding: 3em;
+    border-radius: 2px;
+    font-family: libelSuit;
+    line-height: 2em;
+    border: none;
+    color: white;
+}
+article h2{
+    color: white;
+    font-family: Depressionist;
+    font-size:4em;
+    margin-bottom: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 2em;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 10px;
+}
+article p{
+    font-family: Segan;
+    font-size: 1em;
+    margin-bottom: 4em;
+}
+
+/* verhalen */
+.addStory{
+    border-radius: 50%;
+    border: none;
+    width: 2em;
+    height: 2em;
+    position: fixed;
+    right: 5em;
+    bottom: 2em;
+    color: #2800a0;
+    background: #fffffb;
+    font-size: 1.5em;
+    outline: none;
+}
+address, time{
+    display: inline;
+}
+time{
+    margin-left: 1em;
+}
+article div{
+    width: 100%;
+    text-align: right;
+}
+.smaller{
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+  transform: scale(0.95);
+}
+/* verhalen */
+.addStory{
+    border-radius: 50%;
+    border: none;
+    width: 2em;
+    height: 2em;
+    position: fixed;
+    right: 5em;
+    bottom: 2em;
+    font-size: 1.5em;
+    outline: none;
+    transition: transform 0.2s;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: white;
+    color: rgb(20,20,20);
+}
+@media(max-width: 650px){
+    article{
+        padding: 0;
+        margin: 51vh auto;
+    }
+    article h2{
+        font-size: 3em;
+    }
+    .cover{
+        height: 48vh;
+    }
+}
+@media(max-width: 1300px){
+    .addStory{
+        right: 1em;
+        bottom: 1em;
+    }
+}
+
